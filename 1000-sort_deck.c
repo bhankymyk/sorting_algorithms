@@ -7,7 +7,7 @@ void insertion_sort_deck_value(deck_node_t **deck);
 void sort_deck(deck_node_t **deck);
 
 /**
- * _strcmp - Compares two strings.
+ * _strcmp - Compares the two strings.
  * @s1: The first string to be compared.
  * @s2: The second string to be compared.
  *
@@ -93,12 +93,6 @@ void insertion_sort_deck_kind(deck_node_t **deck)
 		}
 	}
 }
-
-/**
- * insertion_sort_deck_value - Sort a deck of cards sorted from
- *                             spades to diamonds from ace to king.
- * @deck: A pointer to the head of a deck_node_t doubly-linked list.
- */
 void insertion_sort_deck_value(deck_node_t **deck)
 {
 	deck_node_t *iter, *insert, *tmp;
@@ -126,11 +120,7 @@ void insertion_sort_deck_value(deck_node_t **deck)
 	}
 }
 
-/**
- * sort_deck - Sort a deck of cards from ace to king and
- *             from spades to diamonds.
- * @deck: A pointer to the head of a deck_node_t doubly-linked list.
- */
+
 void sort_deck(deck_node_t **deck)
 {
 	if (deck == NULL || *deck == NULL || (*deck)->next == NULL)
